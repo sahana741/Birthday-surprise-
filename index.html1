@@ -1,0 +1,35 @@
+--------------------------------
+✨ Happy Birthday, [Her Name] ✨
+
+[Photo Collage]
+
+💌 Open Letter
+🎁 Secret Message
+📸 Favorite Memory
+🎵 Play Our Song
+
+-------------------------------
+<div class="gallery">
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+  <img src="photo3.jpg">
+  <img src="photo4.jpg">
+</div>-
+.gallery{
+ display:flex;
+ flex-wrap:wrap;
+ gap:15px;
+ justify-content:center;
+}
+
+.gallery img{
+ width:180px;
+ height:180px;
+ object-fit:cover;
+ border-radius:20px;
+ box-shadow:0 8px 20px rgba(0,0,0,0.15);
+ transform:rotate(-2deg);
+}
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 18th Birthday Rishiii 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:linear-gradient(to bottom,#ffe4ec,#fff5f8);
+color:#5a4a4a;
+text-align:center;
+overflow-x:hidden;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+.hero h1{
+font-family:'Dancing Script',cursive;
+font-size:4rem;
+color:#ff4f87;
+margin:0;
+}
+
+.hero p{
+font-size:1.1rem;
+}
+
+.card{
+background:white;
+margin:20px auto;
+padding:25px;
+border-radius:25px;
+width:90%;
+max-width:900px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.polaroid{
+background:white;
+padding:10px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.polaroid img{
+width:100%;
+border-radius:10px;
+}
+
+.button{
+background:#ff5f9e;
+color:white;
+padding:14px 25px;
+border:none;
+border-radius:30px;
+font-size:1rem;
+cursor:pointer;
+}
+
+.hidden{
+display:none;
+margin-top:20px;
+}
+
+.timeline{
+text-align:left;
+max-width:700px;
+margin:auto;
+line-height:2;
+}
+
+.countdown{
+font-size:2rem;
+font-weight:bold;
+color:#ff4f87;
+}
+
+.letter{
+background:#fff0f5;
+padding:15px;
+border-radius:15px;
+margin:10px;
+}
+
+.heart{
+position:fixed;
+font-size:20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-100px);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<h1>Happy 18th Birthday Rishiii 💖</h1>
+<p>29 • 06 • 2008</p>
+<p>Forever My Machaaa ❤️‍🔥</p>
+</div>
+
+<div class="card">
+<h2>⏳ Countdown To Your Day</h2>
+<div id="countdown" class="countdown"></div>
+</div>
+
+<div class="card">
+<h2>🎵 Our Song</h2>
+<p>Taxi Taxi ❤️‍🔥</p>
+<a href="https://www.youtube.com/results?search_query=taxi+taxi+song" target="_blank">
+<button class="button">▶ Play Taxi Taxi</button>
+</a>
+</div>
+
+<div class="card">
+<h2>📸 Our Memories</h2>
+
+<div class="gallery">
+
+<div class="polaroid">
+<img src="photo1.jpg">
+<p>11th standard la aarambicha friendship ❤️</p>
+</div>
+
+<div class="polaroid">
+<img src="photo2.jpg">
+<p>Class la scene pota naalgal 😂</p>
+</div>
+
+<div class="polaroid">
+<img src="photo3.jpg">
+<p>Random selfies, best memories ✨</p>
+</div>
+
+<div class="polaroid">
+<img src="photo4.jpg">
+<p>Loosu moments with my favorite loosu 🫶</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2>📖 Our Friendship Timeline</h2>
+
+<div class="timeline">
+
+❤️ 11th Standard — First time we met.
+
+❤️ Slowly became friends.
+
+❤️ Scene potom, sirichom, sanda potom.
+
+❤️ Shared memories, school days and countless laughs.
+
+❤️ Two years later... still my favorite machaaa.
+
+❤️ Forever besties ♾️
+
+</div>
+</div>
+
+<div class="card">
+<h2>💌 Things I Love About You</h2>
+
+<div class="letter">
+She is very easy going...
+</div>
+
+<div class="letter">
+I love the way she handles anything...
+</div>
+
+<div class="letter">
+The way she doesn't care about things that hurt her...
+</div>
+
+<div class="letter">
+I love everything about her...
+</div>
+
+<div class="letter">
+School life of those two years wouldn't have been fun without her...
+</div>
+
+</div>
+
+<div class="card">
+<h2>🎁 Open Final Surprise</h2>
+
+<button class="button" onclick="showSurprise()">
+Open It 💖
+</button>
+
+<div id="surprise" class="hidden">
+
+<h2>Happy Birthday machaaa!🥳❤️‍🔥</h2>
+
+<p>
+School la irundhu ippo varikkum en kooda scene potu, sirichu, sanda potu, support pannitu irukura unna maari oru friend kedachathuku...I feel lucky!💖
+</p>
+
+<p>
+Intha varusham full happiness , success, and unlimited treats unaku kedaikanum😌✨️
+</p>
+
+<p>
+Eppovum adhe loosu thanama, adhe vibe oda iruuu!
+</p>
+
+<p>
+Love you machaaa❤️‍🩹🎂🎉
+</p>
+
+</div>
+</div>
+
+<script>
+function showSurprise(){
+document.getElementById("surprise").style.display="block";
+}
+
+const birthday = new Date("June 29, 2026 00:00:00").getTime();
+
+setInterval(()=>{
+const now = new Date().getTime();
+const distance = birthday-now;
+
+const d=Math.floor(distance/(1000*60*60*24));
+const h=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const m=Math.floor((distance%(1000*60*60))/(1000*60));
+const s=Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("countdown").innerHTML=
+d+"d "+h+"h "+m+"m "+s+"s";
+},1000);
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="💖";
+heart.style.left=Math.random()*100+"vw";
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),6000);
+}
+
+setInterval(createHeart,500);
+</script>
+
+</body>
+  </html>
